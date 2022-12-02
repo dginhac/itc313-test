@@ -1,4 +1,5 @@
 #include <iostream>
+#include "date.h"
 
 int main()
 {
@@ -6,5 +7,8 @@ int main()
         std::cout << "Hello World: " << i << std::endl; 
     }
     std::cout << "Bye!" << std::endl;
+    
+    Date d(1, 1, 2019);
+    std::cout << d << std::endl;
     return 0;
 }
