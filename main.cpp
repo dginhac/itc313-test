@@ -2,8 +2,10 @@
 #include "date.h"
 
 int main() {
-    Date today(10,11);
-    std::cout << "today: " << today.month() << "/" << today.day() << std::endl;
-    Date a_day(15,11);
+    Date a_day(10,11);
+    std::cout << "a_day: " << a_day.month() << "/" << a_day.day() << std::endl;
+    a_day.updateMonth(9);
+    std::cout << "a_day: " << a_day.month() << "/" << a_day.day() << std::endl;
+    a_day.updateDay(35);
     std::cout << "a_day: " << a_day.month() << "/" << a_day.day() << std::endl;
 }
